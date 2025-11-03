@@ -33,4 +33,9 @@ public abstract class Kart implements Valuable{
         return this.getBasePrice();
     }
 
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " (" + name + ") - Value: " + getValue();
+    }
+
 }

@@ -12,4 +12,9 @@ public class CoinPile implements Valuable {
     public double getValue(){
         return this.coins;
     }
+
+    @Override
+    public String toString() {
+        return "CoinPile - Value: " + getValue();
+    }
 }

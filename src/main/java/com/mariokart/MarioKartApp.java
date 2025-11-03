@@ -19,6 +19,9 @@ public class MarioKartApp {
         //how much is my garage worth
         System.out.println("My garage is worth: " + myGarage.getTotalValueOfGarageValuables());
 
+        System.out.println("=== Garage Inventory ===");
+        myGarage.showAllValuables();
+
 
     }
 }
