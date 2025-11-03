@@ -26,4 +26,10 @@ public class Garage {
         return total;
     }
 
+    public void showAllAssets(){
+//        for(Valuable theCurrentValuable : valuablesInTheGarage){
+//            System.out.println(theCurrentValuable.get);
+//        }
+    }
+
 }
