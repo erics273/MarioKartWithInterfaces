@@ -27,4 +27,10 @@ public abstract class Kart implements Valuable{
     public void setBasePrice(double basePrice) {
         this.basePrice = basePrice;
     }
+
+    @Override
+    public double getValue(){
+        return this.getBasePrice();
+    }
+
 }
