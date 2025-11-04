@@ -21,4 +21,5 @@ public class JetKart extends Kart{
     public void setTurboLevel(int turboLevel) {
         this.turboLevel = turboLevel;
     }
+
 }

@@ -35,7 +35,7 @@ public abstract class Kart implements Valuable, Comparable<Kart>{
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + " (" + name + ") - Value: " + getValue();
+        return getClass().getSimpleName() + " (" + name + ") - Value: " + getValue() + " BasePrice: " + this.getBasePrice();
     }
 
     @Override
