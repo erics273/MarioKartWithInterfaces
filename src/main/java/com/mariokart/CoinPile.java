@@ -15,6 +15,6 @@ public class CoinPile implements Valuable {
 
     @Override
     public String toString() {
-        return "CoinPile - Value: " + getValue();
+        return "CoinPile - Value: " + this.getValue();
     }
 }

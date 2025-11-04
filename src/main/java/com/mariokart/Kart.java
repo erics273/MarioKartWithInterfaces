@@ -1,6 +1,6 @@
 package com.mariokart;
 
-public abstract class Kart implements Valuable{
+public abstract class Kart implements Valuable, Comparable<Kart>{
 
     //create some properties that describe a kart
     private String name;
@@ -36,6 +36,20 @@ public abstract class Kart implements Valuable{
     @Override
     public String toString() {
         return getClass().getSimpleName() + " (" + name + ") - Value: " + getValue();
+    }
+
+    @Override
+    public int compareTo(Kart someOtherKart){
+
+        //lets see if the names are the same and if they are we will move on and try to sort by price
+        if(!this.getName().equalsIgnoreCase(someOtherKart.getName())){
+            return this.getName().compareToIgnoreCase(someOtherKart.getName());
+        }
+
+        //if the names are the same then lets sort by price
+        return Double.compare(this.getBasePrice(), someOtherKart.getBasePrice());
+
+
     }
 
 }
